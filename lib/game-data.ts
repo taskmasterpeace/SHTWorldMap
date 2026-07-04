@@ -3629,7 +3629,48 @@ export interface Character {
   vehicleType?: "aircraft" | "ground" | "sea" | "submarine" | "space"
 }
 
-export const SAMPLE_CHARACTERS: Character[] = []
+export const SAMPLE_CHARACTERS: Character[] = [
+  {
+    id: "1",
+    name: "Randall Jenkins",
+    codename: "Stampede",
+    avatar: "/superhero-male-with-beard.jpg",
+    status: "idle",
+    sectorId: "K26",
+  },
+  {
+    id: "2",
+    name: "Jake Gallagar",
+    codename: "CrossFire",
+    avatar: "/superhero-male-tactical-gear.jpg",
+    status: "traveling",
+    sectorId: "F9",
+  },
+  {
+    id: "3",
+    name: "Cissy Oliva",
+    codename: "",
+    avatar: "/female-agent-professional.jpg",
+    status: "idle",
+    sectorId: "E14",
+  },
+  {
+    id: "4",
+    name: "Alexander Stone",
+    codename: "",
+    avatar: "/older-man-with-beard-superhero.jpg",
+    status: "hospitalized",
+    sectorId: "F14",
+  },
+  {
+    id: "5",
+    name: "Task",
+    codename: "",
+    avatar: "/superhero-mask-tactical.jpg",
+    status: "in-combat",
+    sectorId: "E38",
+  },
+]
 
 // Sample messages/notifications
 export interface GameMessage {
@@ -3643,7 +3684,53 @@ export interface GameMessage {
   read: boolean
 }
 
-export const SAMPLE_MESSAGES: GameMessage[] = []
+export const SAMPLE_MESSAGES: GameMessage[] = [
+  {
+    id: "1",
+    type: "alert",
+    sender: "D. Beasly",
+    content: "My identity has been discovered by the enemy - Day 27 8:22PM",
+    timestamp: "8:22PM",
+    day: 27,
+    read: false,
+  },
+  {
+    id: "2",
+    type: "event",
+    sender: "System",
+    content: "Danny Beasly has went off the grid unexpectedly. (Day 27 11:52PM)",
+    timestamp: "11:52PM",
+    day: 27,
+    read: false,
+  },
+  {
+    id: "3",
+    type: "mission",
+    sender: "Alex Winter",
+    content: "Alex Winter and Task Summer have started an investigation in Boston. (Day 27 11:04PM)",
+    timestamp: "11:04PM",
+    day: 27,
+    read: false,
+  },
+  {
+    id: "4",
+    type: "event",
+    sender: "System",
+    content: "The Vice-President of Venezuela has been assassinated. (Day 27 - 10:38PM)",
+    timestamp: "10:38PM",
+    day: 27,
+    read: true,
+  },
+  {
+    id: "5",
+    type: "mission",
+    sender: "Cissy Oliva",
+    content: "Cissy Oliva has finished an Engineering Project. (Day 27 11:21PM)",
+    timestamp: "11:21PM",
+    day: 27,
+    read: true,
+  },
+]
 
 // Investigation/Case data
 export interface Investigation {
